@@ -31,7 +31,6 @@ android {
     }
     buildFeatures {
         buildConfig = true
-        viewBinding = true
     }
     lint { checkReleaseBuilds = false }
 
@@ -59,21 +58,6 @@ dependencies {
     // Optional: KavaRef (https://github.com/HighCapable/KavaRef)
     implementation(libs.kavaref.core)
     implementation(libs.kavaref.extension)
-
-    // Optional: Hikage (https://github.com/BetterAndroid/Hikage)
-    ksp(libs.hikage.compiler)
-    implementation(libs.hikage.core)
-    implementation(libs.hikage.extension)
-    implementation(libs.hikage.widget.androidx)
-    implementation(libs.hikage.widget.material)
-
-    // Optional: BetterAndroid (https://github.com/BetterAndroid/BetterAndroid)
-    implementation(libs.betterandroid.ui.component)
-    implementation(libs.betterandroid.ui.component.adapter)
-    implementation(libs.betterandroid.ui.extension)
-    implementation(libs.betterandroid.system.extension)
-
-    implementation(libs.drawabletoolbox)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
